@@ -344,7 +344,7 @@ void *complete_jobs(void *arg)
             pthread_create(&jp->tid, NULL, complete_job, jp);
             pthread_detach(jp->tid);
         }
-        sleep(1);
+        sleep(5);
     }
     return NULL;
 }
